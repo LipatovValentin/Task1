@@ -17,6 +17,8 @@ namespace Task1
             Kilometers kilos3 = new Kilometers(300);
 
             Miles miles = miles1 + miles2;
+            Kilometers kilos = kilos1 + kilos2;
+
             bool isSameLen = miles1 == miles2;
 
             SavePathToDataBase(id, miles1, kilos1);
