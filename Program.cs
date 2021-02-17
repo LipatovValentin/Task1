@@ -2,9 +2,9 @@
 
 namespace Task1
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             string id = "test";
 
@@ -23,7 +23,7 @@ namespace Task1
 
             Console.ReadKey();
         }
-        static void SavePathToDataBase(string id, Miles milesPath, Kilometers kilometersPath)
+        public static void SavePathToDataBase(string id, Miles milesPath, Kilometers kilometersPath)
         {
             if (id is null) throw new ArgumentNullException(nameof(id));
             if (milesPath is null) throw new ArgumentNullException(nameof(milesPath));
@@ -33,7 +33,7 @@ namespace Task1
             //...
             Console.WriteLine("{0}: {1} m.miles, {2} kilometers", id, milesPath.Value, kilometersPath.Value);
         }
-        static void SavePathToDataBase(string id, Kilometers kilometersPath, Miles milesPath)
+        public static void SavePathToDataBase(string id, Kilometers kilometersPath, Miles milesPath)
         {
             SavePathToDataBase(id, milesPath, kilometersPath);
         }
